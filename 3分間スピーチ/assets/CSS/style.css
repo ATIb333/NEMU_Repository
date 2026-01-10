@@ -1,0 +1,108 @@
+.kv {
+  width: 100%; /* 画像から推測 */
+}
+
+.overview {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.box_title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.color_blue {
+  color: blue;
+}
+
+.container_title {
+  font-size: 20px;
+  color: orange;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.container_img {
+  width: 40%;
+  display: inline-block;
+  position: relative;
+}
+
+.YouTube {
+  width: 100%;
+  border-radius: 20px;
+  border: 10px solid #fffacd;
+  filter: drop-shadow(5px 5px 5px grey);
+}
+
+.YouTube1 {
+  width: 100%;
+  border-radius: 20px;
+  border: 10px solid #fffacd;
+  filter: drop-shadow(5px 5px 5px grey);
+}
+
+/* 画像ホバーの切り替え処理 */
+.container_img .YouTube1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.container_img:hover .YouTube1 {
+  opacity: 1;
+}
+
+.container_text {
+  padding: 20px;
+  width: 40%;
+}
+
+footer {
+  background-color: #fffacd;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  /* display: flex; */
+}
+
+.container1 {
+  position: relative;
+  display: inline-block;
+}
+
+.footer_img {
+  width: 30%;
+  /* height: 100%; */
+  float: left;
+  display: block;
+}
+
+.footer_link {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.footer_text {
+  color: blue;
+}
+
+small {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
